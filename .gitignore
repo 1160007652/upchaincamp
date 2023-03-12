@@ -3,7 +3,7 @@
 readme.md
 
 node_modules
-**/.env
+**/.env*
 **/!.env.example
 coverage
 coverage.json
