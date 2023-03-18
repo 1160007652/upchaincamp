@@ -29,7 +29,7 @@ describe("Counter", function () {
 
   it("检查合约中 count 方法的调用权限", async function () {
     const [owner, otherAccount] = await ethers.getSigners();
-    await expect(await counter.connect(otherAccount).count()).to.be.revertedWith("You aren't the owner");
+    await expect(counter.connect(otherAccount).count()).revertedWith("You aren't the owner");
   });
   
 })
